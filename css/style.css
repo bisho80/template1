@@ -1,0 +1,2258 @@
+
+/* tene tari2a la t8ayer font bl import btkebo bl css howe andak link wandak limport  */
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap');
+
+
+/* paragraph home font  */
+
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Playpen+Sans:wght@100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap');
+
+
+
+
+/* common style */
+/* opacity hover
+   overlay 
+   section header
+   header nav item line
+   distance between each section 
+   hoover effect 1 from left to right  
+   hoover effect 2 from top to bottom 
+   conatiner bhet fi kel lmawka3 la2an mano de2i2 3an ltraf  */
+
+
+   /* general style */
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box ;
+
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+/* class general bsta3mlo bkel safha aw bkazza safha  */
+.home-overlay{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   background-color: rgba(0   , 0, 0, 0.5);
+
+}
+
+.home-overlay2 {
+   position: relative;
+}
+.home-overlay2::after{
+   position: absolute;
+   content: "";
+   width: 100%;
+   height: 0;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   transition: height 1s;
+   background: #E6D9A2;
+   z-index: -1;
+   
+   
+}
+h1 ,h2 ,h3 ,h4 , h5 , h6 {
+   font-family: montserrat,sans-serif;
+}
+
+button , p {
+   font-family: "Varela Round", sans-serif
+}
+
+.hover-opacity{
+   transition: opacity 1s;
+}
+
+.hover-opacity:hover{
+   opacity: 0.8;
+ 
+}
+
+.leftoright-effect1{
+   position: relative;
+}
+
+
+.leftoright-effect1::after{
+   position: absolute;
+   content: "";
+  
+   width: 0%;/*mn asel lab wl ab sar howe class lal about item ya3ne sar lbso labes lal about item fahon width 100%hye lal aboutitem */
+   
+  background:#CB80AB;
+  top: 0%;
+  right: 0px;
+  left: 0%;
+  bottom: 0;
+  transition: 1s;
+  z-index: -1;
+ 
+ 
+}
+
+.leftoright-effect1:hover::after{
+   width: 100%;
+ 
+}
+  
+
+/* 
+.leftoright-effect1::after {
+  position: absolute;
+  content: "";
+  width: 0%; /* Initial width */
+  /* height: 0%; /* Initial height */
+  /* background: #CB80AB;
+  top: 50%; /* Start from the vertical middle */
+  /* left: 50%; /* Start from the horizontal middle */
+  /* transform: translate(-50%, -50%); /* Center the overlay at the middle */
+  /* transition: 1s; /* Transition duration */
+  /* z-index: -1; Behind the content */ */ */
+
+/* 
+.leftoright-effect1:hover::after { */
+  /* width: 100%; /* Full width on hover */
+  /* height: 100%; /* Full height on hover */
+  /* top: 0; /* Cover from the top */
+  /* left: 0; Cover from the left */
+  /* transform: none; Remove the translate on hover */ */ */ */
+
+
+
+
+.leftoright-effect1:hover .h2-about-content{
+   color: #E6D9A2;
+   transition: 1s;
+}
+
+a {
+   text-decoration: none;
+}
+
+/* padding lakel safha ana tenye  ha a3te hal class la kel awal section balesh fiha */
+.pd_y{
+   padding: 120px 0px;
+
+   
+}
+
+.container1{
+   width: 80%;
+margin: auto;/* kermel heto bnes saf7a lahal lcontainer */
+ 
+ 
+ }
+
+/* 
+
+#624E88  lal 
+#8967B3  lal dropdown anawein aside 
+#CB80AB  lal underline
+#E6D9A2  lal kitebe
+
+
+ */
+ /* Global Adjustments for Mobile */
+@media (max-width: 600px) {
+   body {
+     font-size: 14px; /* Adjust base font size */
+   }
+ 
+   h1, h2, h3, h4 {
+     font-size: 80%; /* Scale down heading sizes */
+   }
+ 
+   .container {
+     padding: 0 15px; /* Add padding for mobile */
+   }
+ 
+   .button {
+     width: 100%; /* Full-width buttons for smaller screens */
+     padding: 10px;
+   }
+ }
+ 
+
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* finish general style  */
+
+/* sections style  */
+
+/* header sections  */
+html {
+   scroll-behavior: smooth; /* Smooth scrolling */
+}
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Center items vertically */
+    
+}
+
+.container1 {
+    width: 80%;
+    margin: auto;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+
+    gap:5%;
+}
+
+.logo {
+    flex: 1; /* Allow logo to take space */
+    
+}
+
+.header .logo img {
+    width: 140px; /* Logo width */
+    height: 70px; /* Logo height */
+    border-radius: 15%;
+}
+
+/* Navbar items */
+
+
+.nav-item {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    flex: 2; /* Allow nav items to take more space */
+    justify-content: flex-end; /* Align to the right of the logo */
+    margin-left: 20px;
+    
+}
+
+.nav-item li {
+    list-style: none;
+    margin-left: 5px; /* Margin between navbar items */
+   
+   
+}
+
+.navbar-nav .nav-item .nav-link {
+   text-decoration: none;
+   padding: 10px 15px;
+   color: #68603e;
+   font-family: "Varela Round", sans-serif;
+   font-size: 18px !important; /* Force font size */
+   font-weight: bold !important; /* Force bold text */
+   transition: color 0.3s;
+}
+
+.nav-item li a:hover {
+    color: #CB80AB; /* Hover effect */
+}
+
+.nav-item li a.active {
+    border-bottom: 3px solid #CB80AB; /* Underline for active link */
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+   position: absolute; /* Ensure the dropdown is positioned properly */
+   z-index: 1000; /* Add a high z-index to ensure the dropdown is above other elements */
+   top: 100%; /* Position the dropdown directly below the parent nav item */
+   left: 0;
+}
+
+
+.dropdown-menu .dropdown-item {
+   background-color: #734e96 !important;
+   color: #E6D9A2 !important;
+
+
+  
+}
+.dropdown-menu .dropdown-item:hover {
+   background-color: #8967B3 !important; /* Background color when hovered */
+   color: #fff !important; /* Change text color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 780px) {
+    .navbar-nav {
+        display: none; /* Hide by default */
+    }
+
+    .navbar-collapse.show {
+        display: flex; /* Show when toggled */
+        flex-direction: column; /* Stack items vertically */
+        width: 100%; /* Full width */
+        padding: 10px 0; /* Space around items */
+    }
+
+    .navbar-toggler {
+        display: block; /* Show toggler on smaller screens */
+    }
+
+    .logo {
+        width: 50%; /* Adjust logo width for smaller screens */
+    }
+
+    .header .logo img {
+        width: 60px; /* Adjust logo size for smaller screens */
+        height: 50px; /* Adjust logo height */
+    }
+
+    .nav-item li a {
+        padding: 10px; /* Adjust padding for links */
+    }
+}
+
+
+
+
+/*  finish header ////////////////////////////////////////////////////////////////////////////// */
+
+/* start home sections  */
+
+.home {
+   height: 100vh;  /*kermel shouf safhet lhome safha bifoun scroll */
+   background-image: url(../Images/pexels-fauxels-3183132.jpg);
+   background-size:cover ;
+   position: relative;
+}
+/* 
+.home .home-overlay{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   background-color: rgba(0   , 0, 0, 0.5);
+
+} */
+
+
+/* hero image la jib hal content bnes lsafha  */
+.home-content{
+  
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+   width: 65%;
+   
+
+}
+
+.home-content .h1-home {
+   color: #E6D9A2;
+   font-size: 40px;
+   text-transform: uppercase;
+}
+
+.home-content .p-home {
+   margin: 10px 0px;
+   letter-spacing: 2px;
+   line-height: 1.5;
+   color: #E6D9A2;
+   font-family: "Playpen Sans", cursive;
+}
+
+.home-content .btn-home-1 {
+   margin-right: 10px;
+   margin-bottom: 5px;
+   margin-top: 10px;
+   padding: 10px 0;
+   border-radius: 5px;
+   border:0;
+   width: 140px;
+
+   cursor: pointer;
+   font-size: 20px;
+   text-align: center;
+  color: black;
+}
+.home-content .btn-home-2{
+   margin-left: 10px;
+   margin-bottom: 5px;
+   margin-top: 10px;
+   padding: 10px 0;
+  
+   border-radius: 5px;
+   border: 0;
+   width: 140px;
+  
+   cursor: pointer;
+   font-size: 20px;
+   background-color: #8967B3 ;
+   color: #E6D9A2;
+}
+
+@media (max-width:780px){
+   .home-content .button .btn-home-2{
+      margin-right: 20px;
+   }
+}
+
+/* finish  section ////////////////////////////////////////////////////////////////////////////////*/
+
+/* begin first-section  */
+
+.first-section{
+   text-align: center;
+ 
+
+}
+.first-section .h2-title {
+   font-size: 40px;
+   text-transform: capitalize;
+   margin-bottom: 12px;
+}
+
+.first-section  .line-title {
+   height: 3px;
+   display: block;
+   background-color: #CB80AB;
+   margin: 0px auto 70px auto;
+   width: 70px;
+}
+
+
+.about .about-content{
+   display: flex;
+   
+}
+
+.about-content .about-item {
+   width: 30%;
+   text-align: center;
+   border: 1px solid #CB80AB;
+   padding: 35px 20px ;
+}
+
+.about-content .about-item.mg2{
+   margin: 0px 5%;
+}
+
+.about-content .about-item .icon {
+   color: #8967B3;
+   margin-bottom: 10px;
+
+}
+
+.about-content .h2-about-content {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.about-para-cont{
+   word-spacing: 1px;
+   line-height: 1.5;
+   margin-bottom: 15px;
+}
+
+@media (max-width: 1024px) {
+   .about-content .about-item {
+       width: 100%; /* Adjust width for tablets */
+   }
+}
+
+
+
+@media (max-width: 768px) {
+   
+   .about .about-content {
+      flex-direction: column;
+        flex-wrap: wrap;
+        
+      
+      width: 100%; /* Full width for mobile devices */
+      align-items: center;
+     
+  }
+   .about-content .about-item {
+      
+       width: 100%; /* Full width for mobile devices */
+      margin: 15px 0;
+     
+   }
+}
+
+@media (max-width: 480px) {
+   .first-section .h2-title {
+       font-size: 30px; /* Smaller title for small screens */
+   }
+   
+   .first-section .line-title {
+       width: 50px; /* Smaller line for small screens */
+   }
+   
+   .about .about-content {
+       flex-direction: column; /* Stack items vertically */
+       align-items: center; /* Center items */
+   }
+
+   .about-content .about-item {
+       margin: 15px 0; /* Maintain spacing */
+   }
+}
+
+
+/*  end about section ////////////////////////////////////////////////////////////////////// */
+
+
+/* begin portfolio section  */
+
+.portfolio-section{
+   background-color: #E6D9A2;
+}
+
+.porfolio-content{
+   display: flex;
+   flex-wrap: wrap; /* Allows items to wrap into the next line */
+   gap: 2%; /* Optional: Adds space between items */
+   justify-content: center; /* Optional: Center items in the container horizontal*/
+
+}
+
+/* flex: [flex-grow] [flex-shrink] [flex-basis]; 
+How flex: 1 1 30%; Works:
+flex-grow: 1 – Allows items to grow and take up remaining space if available.
+flex-shrink: 1 – Allows items to shrink to avoid overflow when space is limited.
+flex-basis: 30% – Each item starts with a base size of 30% of the container width, so 3 items fit into one row.
+This setup should display three items per row and move the remaining items to the next row. You can adjust the gap value to modify the spacing between items or change the flex-basis percentage to adjust the number of items per row.*/
+.portfolio-item{
+   flex: 1 1 32% ;
+   max-width: 32%; /* Ensures each item does not exceed 30% of the container */
+   margin-bottom: 20px; /* Adds space between rows */
+   position: relative;
+   padding: 15px; /*hayde fare2 lon aw lhajem ma3 lporft-overlay-content la2an heda sar relative*/
+ 
+}
+
+.portfolio-item img {
+   width: 100%;
+   height: 240px;
+   
+}
+
+
+.portf-overlay-cont{
+   position: absolute;
+   top: 0;
+   left: 0;
+   text-align: center;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0   , 0, 0, 0.5);
+   opacity: 0;
+   visibility: hidden;
+   transition: opacity 0.4s;
+   
+
+}
+/* portf-cont-info amalto kermel heton bl nes kelon a3mel hero image  */
+.portf-cont-info{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+   width: 70%;
+}
+
+.portf-cont-info p {
+   color:#CB80AB;
+   text-transform: uppercase;
+   margin: 20px;
+   font-size:25px;
+   font-weight: bold;
+      /* kermel eset transition al hover ytla3o la fo2 */
+   position: relative;
+   top: 10px;
+ 
+    /* kermel maytla3o bnafs lwa2t b2akher kel shwy wahyde */
+    transition: top 0.5s,opacity 1s;
+    transition-delay: 0.2;
+
+
+}
+
+.portf-cont-info .mini-tittle-overlay {
+   margin-bottom: 10px;
+   color: #E6D9A2;
+      /* kermel eset transition al hover ytla3o la fo2 */
+   position: relative;
+   top: 10px;
+ 
+    /* kermel maytla3o bnafs lwa2t b2akher kel shwy wahyde */
+    transition: top 0.5s ,opacity 1s ;
+    transition-delay: 0.3s;
+
+}
+.portf-cont-info a {
+   display: inline-block;
+   font-size: 14px;
+   background-color: #CB80AB;
+   height: 40px;
+   width: 40px;
+   line-height: 40px;
+   /* kermel eset transition al hover ytla3o la fo2 */
+   position: relative;
+ 
+   top: 10px;
+  
+    /* kermel maytla3o bnafs lwa2t b2akher kel shwy wahyde */
+    transition: top 0.5s ,opacity 1s;
+    transition-delay:0.4s;
+
+   
+}
+/* Vertical Centering with line-height:
+
+The line-height property controls how much space there is above and below the text or icon inside the box.
+If you set line-height to be the same as the box's height (40px in this case), the text or icon is pushed down enough to sit perfectly in the middle of the box.
+This works because the line-height makes the space above and below the content inside the box equal.
+
+andak height 40px whowe line heigh amal mnfo2 wmn tahet licon  40px fa ejbare teje bl nes */
+
+
+/* hala2 bade eshteghel al overlay bade azhro  kif bade balesh */
+.portfolio-item:hover .portf-overlay-cont,
+.portfolio-item:hover .portf-cont-info p,
+.portfolio-item:hover .mini-tittle-overlay,
+.portfolio-item:hover .portf-cont-info a {
+   visibility: visible;
+   opacity: 1;
+   top: 0;
+}
+@media (max-width: 1200px) {
+   .portfolio-item {
+       flex: 1 1 48%; /* Two items per row */
+       max-width: 48%;
+   }
+}
+
+@media (max-width: 768px) {
+   .portfolio-item {
+       flex: 1 1 100%; /* One item per row */
+       max-width: 100%;
+   }
+}
+
+@media (max-width: 480px) {
+   .portfolio-item {
+       padding: 10px; /* Less padding for smaller screens */
+   }
+
+   .portf-cont-info p {
+       font-size: 20px; /* Smaller font size for better readability */
+   }
+}
+
+
+/* portfolio section finish /////////////////////////////////////////////////// */
+
+
+/* begin offer  section  */
+
+.offer-container{
+   display: flex;
+  
+   flex-wrap: wrap; /* Allows items to wrap into the next line */
+   gap: 8%; /* Optional: Adds space between items */
+   justify-content: center;
+ 
+}
+
+.offer-item{
+   flex: 1 1 25%;
+   max-width: 25%;
+   margin-bottom: 5%;
+   border: 1px solid #ab96c4;
+   padding: 20px 10px 20px 40px;
+   position: relative;
+
+
+}
+
+.offer-item i {
+   position: absolute;
+   left:25px;
+   top: 45px;
+}
+
+.offer-item .h2-offer {
+   text-transform: capitalize;
+   margin-bottom: 15px;
+   text-align: center;
+}
+
+.offer-item .para-offer {
+   text-transform: capitalize;
+   margin-bottom: 15px; 
+   line-height: 1.5;
+   word-spacing: 1.5px;
+   color:#8967B3;
+   text-align: left;
+   margin-left: 40px;
+}
+/* bade a3mel hover mtl lbarade mn lmelten 2 overlay aa nfas lcontainer  ///////////////////////*/
+.leftoright-effect2 {
+   position: relative;
+}
+
+.leftoright-effect2::after, .leftoright-effect2::before {
+   position: absolute;
+   content: "";
+   width: 0;
+   background: #CB80AB;
+   transition: width 1s;
+   z-index: -1;
+}
+
+.leftoright-effect2::after {
+   top: 0;
+   left: 0;
+   bottom: 0;
+}
+
+.leftoright-effect2::before {
+   top: 0;
+   right: 0;
+   bottom: 0;
+}
+
+.leftoright-effect2:hover::after {
+   width: 50%;
+}
+
+.leftoright-effect2:hover::before {
+   width: 51%;
+}
+/* bade a3mel hover mtl lbarade mn lmelten 2 overlay aa nfas lcontainer  ///////////////////////*/
+
+.offer-item:hover .para-offer{
+   color: #E6D9A2;
+   transition: 0.5s;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+   .offer-item {
+      flex: 1 1 30%; /* 3 items per row */
+      max-width: 30%;
+   }
+}
+
+@media (max-width: 800px) {
+   .offer-item {
+      flex: 1 1 45%; /* 2 items per row */
+      max-width: 45%;
+   }
+}
+
+@media (max-width: 500px) {
+   .offer-item {
+      flex: 1 1 90%; /* 1 item per row */
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+   .offer-item .para-offer {
+      margin-left: 20px; /* Reduce left margin for smaller screens */
+   }
+}
+
+/*  finish offer //////////////////////////////////////////////////////////////////////////// */
+
+
+/* start services //////////////////////////////// */
+
+
+.services{
+   background-color: #E6D9A2;
+}
+
+.container2{
+   width: 90%;
+   margin-left:5%;
+   text-align: left;
+   display: flex;
+   gap:5%
+   
+
+   
+}
+
+
+.first-section1 .line-title {
+   height: 3px;
+   display: block;
+   background-color: #CB80AB;
+   margin: 0px auto 30px auto;
+   width: 70px;
+   margin-left: 0;
+}
+
+
+.first-section1 .mini-services {
+   margin-left: -5%;
+}
+.first-section1 .para-services{
+   width: 90%;
+   text-align: left;
+}
+
+
+/* kif ba3mel eno het licon wdescreption te3ito  aa nafs lsater abdan ya3ne nes licon deghre bleze2 ldescreption  */
+.first-section1 .mini-services li {
+   display: flex; /* Use flexbox for alignment */
+   align-items: center; /* Center vertically */
+   list-style: none;
+   line-height: 1.5;
+   word-spacing: 1.5px;
+   text-align: left;
+   margin-bottom: 5px; /* Add space between list items */
+}
+
+.first-section1 .mini-services li i {
+
+  
+   /* background-color: #8967B3; */
+   display: inline-block;
+   margin-right: 10px; /* Space between icon and text */
+}
+
+.carousel{
+   margin-top: 10px;
+}
+
+.carousel .carousel-item img {
+   width:500px;
+   height: 450px;
+}
+
+.carousel-control-prev .fas,
+.carousel-control-next .fas {
+    color: #ffcc00; /* Change to your desired color */
+    font-size: 2rem; /* Adjust the size if needed */
+    margin-top: 200px;
+}
+
+.carousel-control-prev .fas:hover,
+.carousel-control-next .fas:hover {
+    color: #ff9900; /* Color on hover */
+}
+@media (max-width: 800px) {
+   .container2 {
+       flex-direction: column; /* Stack items vertically on smaller screens */
+       align-items: center; /* Center items */
+       width: 100%; /* Full width for the container */
+   }
+
+   .first-section1 .para-services {
+       width: 100%; /* Full width for paragraph */
+       margin-bottom: 20px; /* Space below paragraph */
+   }
+
+   .first-section1 .mini-services {
+       margin-left: 0; /* Reset left margin */
+       width: 100%; /* Make mini-services full width */
+   }
+
+   .first-section1 .mini-services li {
+       justify-content: flex-start; /* Align items to the start */
+   }
+}
+
+
+
+/* ///////////////////////////////finish section offer  */
+
+
+/* begin number-section  */
+
+.num-section{
+   
+   position: relative;
+   background-image: url(../Images/diploma.webp);
+   height: 300px;
+   width: 100%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   /* kermel khalya  tetharak ma3 lscroll */
+   background-attachment: fixed;
+   margin-top: 200px;
+
+
+
+  
+}
+
+.num-item-grp{
+   width: 100%;
+   display: flex;
+   gap: 10%;
+   /* margin-top: 100px 0px; */
+    /* justify-content: space-around;  */
+   text-align: center; 
+ 
+
+}
+.num-item {
+   flex: 1 1 20%;
+   flex-wrap: wrap;
+  
+
+}
+
+
+.num-item-grp .icon {
+   color: #8967B3;
+   margin-bottom: 10px;
+   font-size: 35px;
+
+}
+
+.num-item-grp .h2-num-sec {
+   color: #E6D9A2;
+   margin-bottom: 10px;
+   font-weight: bold;
+}
+
+.num-item-grp .para-num-sec {
+   color: #ab96c4;
+}
+
+/* Number Section */
+@media (max-width: 768px) {
+   .num-item-grp {
+       flex-direction: row; /* Stack vertically on small screens */
+       gap: 10px; /* Reduce gap between items */
+   }
+   
+   .num-item {
+       flex: 1 1 auto; /* Allow to take full width */
+       width: 100%; /* Full width for items on small screens */
+   }
+
+   .num-item-grp .icon {
+       font-size: 25px; /* Adjust icon size */
+   }
+
+   .num-item-grp .h2-num-sec {
+       font-size: 20px; /* Adjust heading size */
+   }
+
+   .num-item-grp .para-num-sec {
+       font-size: 14px; /* Adjust paragraph size */
+   }
+}
+
+
+/* finish number-section  */
+
+/* begin prices section  */
+
+.Prices-section {
+   position: relative;
+}
+
+.prices-item-grp {
+   display: flex;
+   flex-wrap: wrap; /* Allows items to wrap into the next line */
+   gap: 8%; /* Optional: Adds space between items */
+   justify-content: center;
+
+
+}
+  
+
+.prices-item{
+flex: 1 1 25%;
+max-width: 25%;
+margin-bottom: 5%;
+border: 1px solid #ab96c4;
+
+text-align: center;
+position: relative;
+
+}
+.subscribe_tittle{
+  
+   margin: 15px  0 35px 0  ;
+   text-align: center;
+   
+}
+.h3_prices{
+   word-spacing: 0.7;
+   color: #ab96c4;
+   margin-bottom: 30px;
+
+}
+
+.prices_mnth{
+   border-radius: 50%;
+   border:2px solid #8967B3;
+   padding: 20px 0px;
+   width: 150px;
+   margin: auto;
+   margin-bottom: 20px;
+   position: relative;
+}
+.prices_subscription{ 
+   font-weight: bold;
+   font-size:30px;
+}
+
+.prices_mnth .span_month {
+   position: absolute;
+   bottom: 15px;
+   right: 50px;
+   font-size: 15px;
+   font-weight: bold;
+}
+
+.prices_descreption  {
+   text-align: center;
+   line-height: 2;
+   word-spacing: 1.5px;
+   margin: 10px 0 20px 0;
+
+   
+
+}
+.prices_descreption li {
+   list-style: none;
+   color: #ab96c4;
+}
+
+.button_prices button {
+   padding:7px  3px;
+   width: 150px;
+   margin-bottom: 25px;
+   border: 2px solid #8967B3;
+   color: #CB80AB;
+   font-weight: bold;
+}
+
+
+.home-overlay2:hover::after{
+   height: 100%;
+
+
+}
+
+.home-overlay2:hover .prices_descreption li {
+   color: #3c0d75;
+   font-size: 20px;
+}
+
+.home-overlay2:hover .button_prices button{
+  color:indianred;
+  border-radius: 15%;
+}
+
+.home-overlay2:hover .subscribe_tittle {
+   text-transform: uppercase;
+   color:#4d0c31;
+}
+
+/* Prices Section */
+@media (max-width: 1024px) {
+   .prices-item {
+     flex: 1 1 45%; /* Two items per row for tablet view */
+     max-width: 45%;
+   }
+ }
+ 
+ @media (max-width: 768px) {
+   .prices-item {
+     flex: 1 1 100%; /* One item per row for mobile view */
+     max-width: 100%;
+   }
+ 
+   .prices_mnth {
+     width: 100px; /* Smaller circular price icon */
+     padding: 10px 0px;
+   }
+ 
+   .prices_mnth .span_month {
+     font-size: 12px; /* Smaller month text */
+   }
+ 
+   .prices_descreption li {
+     font-size: 14px; /* Smaller description text */
+   }
+ 
+   .button_prices button {
+     width: 120px; /* Smaller buttons */
+   }
+ }
+ 
+
+
+/*  finishhh of prices section //////////////////////////////////////////////////////////////////////////// */
+
+
+/*  start teacher_portfolio section */
+
+.teachers_portf {
+   position: relative;
+   width: 100%;
+   height: 400px;
+   background-image: url(../Images/study0.webp);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+  
+   
+}
+
+.teacher-item{
+   margin-top: 100px;
+   display: flex;
+   flex-wrap: wrap; /* Allows items to wrap into the next line */
+   gap: 15%; /* Optional: Adds space between items */
+
+}
+
+.teacher-item1{
+   flex: 1 1 40%;
+   max-width: 40%;
+   margin-bottom: 5%;
+   
+   
+   text-align: left;
+   border: none;
+   
+   
+}
+.images-teach{
+   border-radius: 50%;
+   
+}
+.img-desc{
+   margin-left: 85px;
+   margin-bottom: 15px;
+   margin-top: -60px ;
+}
+.teacher-name , .teacher-descreption{
+   color: #E6D9A2;
+   font-weight: bold;
+}
+
+.img-desc h5 {
+   color: #ab96c4;
+}
+
+
+.teacher-descreption {
+   line-height: 1.8;
+   word-spacing: 1.6px;
+   font-size: 15px;
+   
+}
+
+/* Teachers Portfolio Section */
+@media (max-width: 1024px) {
+   .teacher-item1 {
+     flex: 1 1 45%; /* Two items per row for tablet view */
+     max-width: 45%;
+   }
+ }
+ 
+ @media (max-width: 768px) {
+   .teacher-item1 {
+     flex: 1 1 100%; /* One item per row for mobile view */
+     max-width: 100%;
+    
+   }
+   .teacher-item1 img{
+      height: 50px;
+      width: 50px;
+     
+    }
+   .teacher-item {
+      margin-top: 13px;
+
+     
+    }
+   .teacher-item1 .img-desc {
+      margin-right: 100px;
+      
+    }
+ 
+   .teacher-name, .teacher-descreption {
+     font-size: 14px; /* Adjust font size for smaller screens */
+   }
+ 
+   .teacher-descreption {
+     line-height: 1.5; /* Adjust line height */
+   }
+ 
+   .images-teach {
+     width: 80px; /* Adjust image size */
+   }
+ 
+   .img-desc {
+     margin-left: 50px; /* Reduce margin on mobile */
+   }
+ }
+ 
+
+/* finish of teachers////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/*  start team section  */
+
+.team-item-grp {
+   display: flex;
+   gap:5%;
+   flex-wrap:wrap;
+   width: 100%;
+  
+
+}
+
+
+.item-team {
+   flex: 1 1 30%;
+   max-width: 30%;
+   border: 1px solid #ab96c4;
+   background-color: #9388a1;
+   position: relative;
+}
+
+.img-team {
+  padding:15px 20px;
+  text-align: center;
+  position: relative;
+ 
+  
+}
+
+.icon-team {
+   position: absolute;
+   list-style: none;
+   text-decoration: none;
+   top: 15px;
+   right: 52px;
+   background-color: #ab96c4;
+
+   
+}
+.icon-team li {
+   display: block;
+ 
+
+}
+.icon-team li a {
+   display: inline-block;
+   color: #E6D9A2;
+   cursor: pointer;
+
+   padding: 2px 5px ;
+
+ 
+   
+  
+    /* kermel maytla3o bnafs lwa2t b2akher kel shwy wahyde */
+    transition: top 0.7s ,opacity 1s ,padding 1s;
+    transition-delay:0.4s;
+}
+.icon-team  .iii{
+   font-size: 20px;
+
+
+}
+.icon-team li a:hover{
+   background-color: red;
+}
+
+.h4-team{
+   margin-bottom: 5px;
+   font-weight: bold;
+   color: #E6D9A2;
+}
+
+
+
+
+.home-overlay3{
+   position: absolute;
+   top: 0;
+   left: 0;
+   text-align: center;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0   , 0, 0, 0.5);
+   opacity: 0;
+   visibility: hidden;
+   transition: opacity 0.4s;
+   
+   
+}
+   
+.item-team:hover .home-overlay3{
+   visibility: visible;
+   opacity: 1;
+ 
+  
+}
+
+.item-team:hover {
+   background-color:#4d0c31;
+}
+
+.item-team:hover .icon-team li a {
+
+  
+   padding: 12px 15px ;
+
+}
+
+.item-team:hover .h5-team {
+   color: rgb(207, 102, 15);
+}
+/* Team Section */
+@media (max-width: 1024px) {
+   .item-team {
+     flex: 1 1 45%; /* Two items per row for tablet view */
+     max-width: 45%;
+   }
+ }
+ 
+ @media (max-width: 768px) {
+   .item-team {
+     flex: 1 1 100%; /* One item per row for mobile view */
+     max-width: 100%;
+     margin-bottom: 10px;
+     
+    
+   }
+
+ 
+   .h4-team {
+     font-size: 16px; /* Adjust heading size */
+   }
+ 
+   .img-team {
+     width: 100%; /* Adjust image size */
+   }
+   
+   .icon-team  {
+   right: 82px;
+    }
+ 
+   .icon-team li a {
+     padding: 8px 10px; /* Reduce padding for icons */
+     font-size: 16px; /* Adjust icon size */
+   }
+ }
+ 
+
+
+/* finsih Team section////////////////////////////////////////////////////// */
+
+
+/*  begin section blog */
+
+.blog-section{
+   background-color: #E6D9A2;
+}
+
+.bog-item-grp{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   gap: 3%;
+   
+
+}
+
+.blog-item {
+flex: 1 1 30%; 
+max-width: 30%; 
+text-align: center;
+
+
+}
+
+.blog-item-img{
+   
+   width: 90%;
+}
+
+
+.blog-item-img img{
+   width: 100%;
+   margin: auto;
+}
+
+.icon-blog {
+   margin: 15px 50px 15px 0px;
+   color: #3c0d75;
+}
+
+.icon-blog .icon-2 {
+   margin: 0 5px;
+}
+
+.icon-blog  span {
+   margin-left:5px;
+}
+
+.blog-content {
+   text-align: left;
+}
+
+.blog-content .h5-blog{
+   word-spacing: -2px;
+   font-weight: bold;
+
+}
+.blog-content .para-blog{
+   line-height: 1.6;
+   color: #9388a1;
+}
+
+.blog-content button {
+   border: none;
+   background-color:transparent;
+   color:#3c0d75;
+   
+}
+@media (max-width: 768px) {
+   
+   .blog-item-grp {
+       flex-direction: column;
+       gap: 20px;
+       align-items: center;
+   }
+   
+   .blog-item {
+       flex: 1 1 100%;
+       max-width: 100%;
+       text-align: center;
+   }
+   
+   .blog-item-img {
+       width: 100%;
+   }
+   
+   .icon-blog {
+       margin: 15px 0;
+       justify-content: center;
+   }
+
+   .blog-content {
+       text-align: center; /* Center-align text content on small screens */
+   }
+}
+
+
+/*  fisnih blog////////////////////////////////////////////////////////// */
+
+
+/* begin of conatct section  */
+.contact {
+   background-color: #E6D9A2;
+   padding: 20px 0;
+}
+
+.container4 {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   gap: 3%;
+   flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Contact Group */
+.contact-grp {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   gap: 3%;
+   width: 45%;  /* Adjust width to be beside input on larger screens */
+}
+
+.contact-item {
+   flex: 1 1 30%;
+   max-width: 30%;
+   text-align: center;
+}
+
+.contact-item i {
+   color: #8967B3;
+}
+
+.contact-item .contact-h5 {
+   margin: 8px 0;
+}
+
+/* Input Container */
+.input-cntct {
+   width: 50%; /* This will make it side by side with .contact-grp */
+   margin-top: 0; /* No margin at top, because it's beside on large screens */
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+   padding: 0;
+}
+
+/* Name and Email side by side on large screens */
+.input-cntct li {
+   list-style: none;
+   display: flex;
+   justify-content: space-between;
+   gap: 5%;
+   width: 100%;
+   box-sizing: border-box;
+}
+
+.input-cntct .name,
+.input-cntct .email {
+   width: 45%; /* Take 45% width each on large screens */
+}
+
+/* Full-width for other inputs */
+.input-cntct .subject,
+.input-cntct .message {
+   width: 100%;
+}
+
+input[type="text"],
+input[type="email"] {
+   background-color: #8967B3;
+   color: white;
+   border: 1px solid #ccc;
+   padding: 10px;
+   border-radius: 5px;
+   width: 100%; /* Ensure inputs take full width of their container */
+   box-sizing: border-box; /* Include padding within width */
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
+   color: #ccc;
+}
+
+.input-cntct .send-msg {
+   background-color: #8967B3;
+   color: #E6D9A2;
+   padding: 10px 20px;
+   border: none;
+   cursor: pointer;
+   align-self: center;
+}
+
+.input-cntct .send-msg:hover {
+   background-color: #734e96;
+}
+/* Media Query for Tablet and Phone (Stack inputs vertically) */
+@media (max-width: 768px) {
+   .container4  {
+
+       flex-direction: column; /* Stack .contact-grp and .input-cntct vertically */
+       align-items: center;
+   }
+
+   .contact-grp {
+       width: 100%; /* Take full width on smaller screens */
+       justify-content: center;
+       margin-bottom: 20px; /* Add space below contact items */
+   }
+
+   .input-cntct {
+       width: 100%; /* Ensure it takes full width on smaller screens */
+       margin-top: 0; /* Remove any top margin */
+   }
+
+   /* Stack name and email vertically */
+   .input-cntct li {
+       flex-direction: column; /* Stack all input elements vertically */
+       gap: 10px; /* Add space between stacked inputs */
+   }
+
+   .input-cntct .name,
+   .input-cntct .email {
+       width: 100%; /* Take full width of the container */
+   }
+
+   .input-cntct .subject,
+   .input-cntct .message {
+       width: 100%; /* Keep full width for subject and message */
+   }
+}
+
+@media (max-width: 480px) {
+   .contact-grp {
+       flex-direction: column; /* Stack contact items vertically */
+       align-items: center;
+       gap: 20px;
+   }
+
+   .contact-item {
+       flex: 1 1 100%; /* Full width on smaller screens */
+       max-width: 100%;
+   }
+
+   .input-cntct {
+       width: 100%;
+       gap: 20px; /* Add more space between inputs */
+   }
+}
+
+/* finish blog  */
+
+.footer{
+   background-color: #9388a1;
+   text-align: center;
+   padding: 60px 0;
+   
+
+}
+
+
+
+.h2-footer {
+
+   
+
+   color: #E6D9A2;
+   box-shadow: #9388a1 ;
+
+   margin-top: 30px;
+  
+
+   
+}
+.h2-footer h2 {
+   font-size: 45px;
+   font-family: monospace;
+   letter-spacing: 4px;
+   font-weight: bold;
+}
+
+
+.icon-footer {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 30px;
+   width: 490px;
+   margin: auto;
+   margin-top: 40px;
+   margin-bottom: 40px;
+  
+
+}
+
+.icon-footer li {
+   
+   list-style: none;
+   text-decoration: none;
+   background-color:#3c0d75;
+   border-radius: 15px;
+   
+
+}
+
+.icon-footer li i {
+   font-size: 20px;
+   color: white;
+   display: inline-block;
+   padding: 13px;
+   
+
+}
+
+
+
+/* blog-section2 */
+
+.blog-page {
+   position: relative;
+   top: 120px;
+   padding: 50px;
+   
+   background-color: #8967B3;
+   margin-bottom:150px;
+}
+
+.blog-page-grp{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+  
+}
+
+.blog-page-para {
+   margin-top: 20px;
+
+}
+
+.home-b{
+   color: #E6D9A2;
+}
+
+
+.blog-b{
+   color: #E6D9A2;
+}
+
+
+
+.Single-Post-b{
+   color: black;
+}
+
+
+.blog-b:hover , .home-b:hover {
+   color: red;
+
+}
+
+@media (max-width:780px)
+{
+   .blog-page-grp{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+}
+
+
+
+
+
+
+/* finish blog page  ////////////////////////////////////////////////////*/
+
+
+.section-left {
+   width: 70%;
+}
+
+
+.img-sect-1 {
+   width: 100%;
+   height: 450px;
+
+}
+
+.img-sect-1 img{
+   width: 100%;
+   height: 100%;
+}
+
+.blog-content{
+   width: 100%;
+}
+
+.tags-item {
+   width:100%;
+   /* display: flex;
+   gap:20px */
+   margin-left: -39px;
+
+}
+
+
+.tags-item li {
+   display: inline-block;
+   margin: 2px 4px;
+   background-color:#E6D9A2;
+   padding: 3px 7px;
+   border-radius: 15%;
+   
+}
+
+.tags-item li:first-child {
+   font-weight: bold; /* Example: Make the first li bold */
+   color: red; /* Example: Change the color */
+   margin-right: 10px; /* Optional: Add spacing */
+}
+
+
+.tags-item li a {
+   cursor: pointer;
+   color: #3c0d75;
+}
+
+.blog-cart{
+   height: 200px;
+   border: 1px solid #8967B3;
+}
+
+.cart-content{
+   padding: 10px;
+   display: flex;
+   height: 100%;
+}
+.cart-img{
+   width: 40%;
+   background-color: #3c0d75;
+   height: 150px;
+   margin: auto;
+   
+ 
+
+}
+
+.cart-img img {
+   width: 100%;
+   height: 100%;
+   border-radius: 15%;
+ 
+}
+
+.title-icon-para{
+   margin-left: 10px;
+
+}
+
+.title-icon{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding-top: 15px;
+  
+}
+
+.cart-title{
+   font-weight: bold;
+   font-size: 20px;
+   /* margin-top: 10px; */
+   width: 30%;
+   padding-right: 10px;
+}
+
+
+.icon-cart {
+   display: flex; /* Make the icons align horizontally */
+   gap: 10px; /* Space between the icons */
+}
+
+.icon-cart li {
+   list-style: none;
+}
+
+.icon-cart li a {
+   display: inline-block;
+   padding: 10px;
+   background-color: #8967B3;
+   border-radius: 50%;
+   color: wheat;
+   text-align: center;
+}
+
+.icon-cart li a i {
+   font-size: 15px;
+}
+
+.line-cart{
+   width: 90%;
+   margin: auto;
+   border: 2px solid #ab96c4;
+
+}
+
+.para-cart{
+   margin-top: 10px;
+   text-transform: capitalize;
+}
+
+.numb-cmnt {
+   margin: 20px  0px ;
+   font-weight: bold;
+   font-family: Arial, Helvetica, sans-serif;
+   letter-spacing: 1.5px;
+}
+
+.numb-cmnt  .line-title-blog {
+   height: 3px;
+   display: block;
+   background-color: #CB80AB;
+  
+   width: 70px;
+}
+
+.blog-cart-item{
+   height: 120px;
+   border: 1px solid #ccc;
+   margin: 10px 0px ;
+}
+
+.cart-content-item{
+   padding: 10px;
+   display: flex;
+   height: 100%;
+}
+.cart-img-item{
+   width: 20%;
+   background-color: #3c0d75;
+   height: 65px;
+   margin: auto;
+   
+ 
+
+}
+
+.cart-img-item img {
+   width: 100%;
+   height: 100%;
+   border-radius: 15%;
+ 
+}
+
+.title-icon-para-item{
+   margin-left: 10px;
+   
+  
+   
+
+}
+
+.title-icon-item{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding-top:10 px;
+   height: 20px;
+   position: relative;
+  
+}
+
+.cart-title-item{
+   font-weight: bold;
+   font-size: 15px;
+   /* margin-top: 10px; */
+   width: 30%;
+   padding-right: 10px;
+  
+}
+.time-title{
+   position: absolute;
+  
+   left:140px;
+   top: 2px;
+   font-size: smaller;
+   color: #9388a1;
+}
+
+
+.icon-cart-item {
+   display: flex; /* Make the icons align horizontally */
+   gap: 10px; /* Space between the icons */
+}
+
+.icon-cart-item li {
+   list-style: none;
+}
+
+.icon-cart-item li a {
+   display: inline-block;
+   
+   
+   
+   color: #3c0d75;
+   text-align: center;
+}
+
+.icon-cart-item li a i {
+   font-size:15px;
+}
+
+.line-cart-item{
+   width: 90%;
+   
+   border: 2px solid #ab96c4;
+
+}
+
+.para-cart-item{
+   margin-top: 3px;
+   text-transform: capitalize;
+   color: #9388a1;
+}
+
+.container {margin-bottom: 200px;}
+
+input[type="text1"] {
+   background-color:#ab96c4;
+   color: white; /* Set the text color to white for contrast */
+   border: 1px solid #ccc; /* Optional: Add a border to make inputs more visible */
+   padding: 10px 0px; /* Optional: Add some padding for a better appearance */
+   border-radius: 5px; /* Optional: Rounded corners */
+   width: 49%;
+}
+input[type="email1"] {
+   background-color:#ab96c4;
+   color: white; /* Set the text color to white for contrast */
+   border: 1px solid #ccc; /* Optional: Add a border to make inputs more visible */
+   padding: 10px 0px; /* Optional: Add some padding for a better appearance */
+   border-radius: 5px; /* Optional: Rounded corners */
+   width: 50%;
+}
+
+input[type="text1"]::placeholder {
+   color: #4d0c31; /* Set placeholder text color */
+}
+input[type="email1"]::placeholder {
+   color: #4d0c31; /* Set placeholder text color */
+}
+
+.textarea {
+   width: 100%;
+   margin: 10px 0px;
+   
+}
+.textarea textarea {
+   width: 100%;
+   background-color: #ab96c4;
+   border-radius: 5px;
+   color: #4d0c31; /* Set placeholder text color */
+}
+.btn-blog{
+   margin: 15px 0px;
+
+}
+.btn-blog .btn-blog-inp {
+   padding: 5px 10px;
+   width: 20%;
+   background-color: #CB80AB;
+   color:wheat;
+   border-radius: 5px;
+}
+
+/* finish the first section  */
+
+.two-section{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 2%;
+}
+
+@media (max-width:600px){
+   .two-section{
+      flex-direction: row;
+      align-items: center;
+    
+   }
+   .section-left{
+      width: 100%;
+   }
+   .blog-cart .cart-content .cart-img{
+      width: 60%;
+      height: 50%;
+   }
+   .blog-cart .cart-content .title-icon-para .cart-title{
+      font-size: 15px;
+   }
+   .blog-cart .cart-content .title-icon-para i {
+      font-size: 15px;
+      padding: 1px;
+   }
+   .blog-cart .cart-content .parag-cart{
+      font-size: 13px;
+      line-height: 1.2;
+      font-weight: lighter;
+   }
+
+}
+
+@media (max-width:600px){
+   .cart-content-item .cart-img-item{
+      width:50% ;
+   }
+   .cart-title-item{
+      font-size: 12px;
+
+   }
+   .parag-cart-item{
+      font-size: 12px;
+      line-height: 1.2;
+   }
+}
+
+
+
+/* second section  /////////////////////////////////////////////////////////*/
+.section-right{
+   width: 28%;
+}
+
+.input-container2 {
+   position: relative;
+   display: inline-block;
+   
+}
+/* display: inline-block;: The container takes up only as much space as its content requires.
+ The input's width: 100% will only fill the container's width, which is smaller than the parent width.
+display: block; (or no inline-block): The container will take up the full width of its parent,
+ allowing the input's width: 100% to stretch across the entire available width. */
+
+#search {
+   width: 100%; /* bas ma btekhod lwdith 100% of parent kemle aw fixed shou mahatet padding aw shi hada btekhod mnl lwidth taba3a mtl licon*/
+   max-width: 300px;
+  
+   padding: 8px 40px 8px 10px; /* Add space for the icon */
+   font-size: 16px; /* Adjust font size */
+   border: 1px solid #ccc; /* Border styling */
+   border-radius: 4px; /* Rounded corners */
+}
+
+.input-container2 i {
+   position: absolute;
+   top: 50%;
+   right: 10px; /* ala border lyamin bikoun right 0*/
+   transform: translateY(-50%); /*With translateY(-50%), the icon’s center is aligned to the middle of the input field, making it look perfectly centered.*/
+   color: #888; /* Icon color */
+   font-size: 16px;
+}
+
+
+/* tene tari2a
+ <div class="section-right">
+    <div class="input-search">
+        <input type="search" name="search" id="search" placeholder="search">
+        <span class="search-icon"><i class="fa fa-search"></i></span>
+    </div>
+</div>
+*/
+/* .input-search {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    width: 100%;
+    max-width: 300px;
+}
+
+#search {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.search-icon {
+    color: #aaa;
+    font-size: 16px;
+    padding-right: 8px;
+}
+ */
+
+.category-item {
+   padding-left: 0;
+   width:80%;
+   margin-bottom: 40px;
+ 
+
+}
+
+.category-item li {
+   display: inline-block;
+   border: 1px solid grey;
+   text-decoration: none;
+   list-style: none;
+   position: relative;
+   padding: 3px;
+   width:100%;
+}
+
+
+input[type="text3"] {
+   border: none;
+  
+ 
+  font-size: 13px;
+  /* font-weight: bold; */
+  
+}
+
+input[type="text3"]::placeholder {
+   color:#4d0c31;
+}
+
+
+.ctg-num{
+   font-size: 16px;
+   font-weight: bold;
+   border: none;
+   position: absolute;
+   right: 20px;
+   top: 10%;
+   color: #3c0d75;
+}
+
+.width90{
+   border-radius: 15%;
+
+}
+
+.mini-blog-item{
+   display: flex;
+   height: 100px;
+}
+
+.mini-blog-item-img{
+   width: 40%;
+   margin: auto 0px;
+
+}
+
+.mini-blog-item-img img {
+   width: 90%;
+   height: 70%;
+   box-shadow: #888 1px 2px 3px;
+   
+}
+
+.mini-blog-item-cnt{
+   margin: auto 0px;
+  
+}
+
+.mini-blog-item-cnt h6 {
+   color: #3c0d75;
+}
+.mini-blog-item-cnt p {
+   font-size: small;
+   color: #888;
+}
+
+
+
+.mini-tags-span span{
+   background-color: rgb(218, 216, 216);
+   padding: 5px 2px;
+   color: #4d0c31;
+   font-weight: bold;
+   font-size: 12px;
+   
+}
+
+.space {
+   margin: 15px 0px;
+   background-color: wheat;
+
+}
+@media(max-width:600px){
+   .section-right{
+      width: 100%;
+   }
+   .footer{
+      margin-top: 15px;}
+}
