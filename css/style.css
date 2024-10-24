@@ -160,7 +160,12 @@ margin: auto;/* kermel heto bnes saf7a lahal lcontainer */
 #E6D9A2  lal kitebe
 
 
+
+
  */
+
+
+
  /* Global Adjustments for Mobile */
 @media (max-width: 600px) {
    body {
@@ -190,9 +195,11 @@ margin: auto;/* kermel heto bnes saf7a lahal lcontainer */
 /* sections style  */
 
 /* header sections  */
-html {
-   scroll-behavior: smooth; /* Smooth scrolling */
+
+body {
+   overflow-x: hidden; /* Hide horizontal scrollbar */
 }
+
 .header {
     position: fixed;
     width: 100%;
@@ -834,9 +841,12 @@ andak height 40px whowe line heigh amal mnfo2 wmn tahet licon  40px fa ejbare te
    margin-top: 10px;
 }
 
+
 .carousel .carousel-item img {
-   width:500px;
+   width: 450px !important;
    height: 450px;
+   align-items: center;
+   
 }
 
 .carousel-control-prev .fas,
@@ -870,7 +880,21 @@ andak height 40px whowe line heigh amal mnfo2 wmn tahet licon  40px fa ejbare te
    .first-section1 .mini-services li {
        justify-content: flex-start; /* Align items to the start */
    }
+ 
 }
+@media (max-width: 600px) {
+   .carousel .carousel-item{
+      width: 100%;
+   }
+ .carousel-item img {
+   margin-right: +50px;
+   
+ }
+ 
+}
+
+
+
 
 
 
